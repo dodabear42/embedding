@@ -1,0 +1,99 @@
+* {
+	margin: 0;
+}
+body {
+	font-family: Arial, Sans-serif;
+	font-size: 11px;
+	background: #fff;
+}
+
+html, body {
+	height: 100%;
+}
+
+header {
+	width: 100%;
+	height: 80px;
+	text-align: left;
+	margin: 0;
+	position: fixed;
+	background-color: #fff
+}
+
+section {
+	background-color: #f0f0f0;
+}
+
+li {
+	display: inline-block;
+	padding: 0 0 0 0;
+	vertical-align: middle;
+	margin: 0 0 0 0;
+}
+
+video {
+	width: 600px;
+	height: 450px;
+	padding: 0;
+}
+
+.navigation {
+	padding: 0;
+	border: none;
+	background-color: transparent;
+	margin: 0 50px 0 0;
+}
+
+.logo {
+	width: 100px;
+	height: 75px;
+	padding: 0 0 0 0;
+	margin: 0;
+}
+
+.textBox, .search-button {
+	
+	border: 1px solid #C8C8C8;
+}
+
+.textBox {
+	height: 26px;
+	width: 550px;
+	background-repeat: no-repeat;
+	margin-right: 0;
+	padding-right: 0;
+}
+
+.search-button {
+	height: 30px;
+	width: 80px;
+	padding-left: 0;
+	margin: 0 50px 0 -5px;
+}
+
+.search-icon {
+	height: 19px;
+	padding: 2px 0 2px 0;
+}
+
+.upload-button, .sign-in-button, .search-button {
+	background-color: #F8F8F8;
+}
+
+.upload-button, .sign-in-button {
+	border: 1px solid #C8C8C8;
+	border-radius: 1px;
+	height: 28px;
+	width: 60px;
+}
+
+.upload-button {
+	margin-right: 10px;
+}
+
+.sign-in-button {
+	color: #fff;
+	background-color: #167ac6;
+	border-color: #167ac6;
+}
+
