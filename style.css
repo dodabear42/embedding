@@ -1,3 +1,51 @@
+/* CSS Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+
+/* Main CSS */
 * {
 	margin: 0;
 }
@@ -11,52 +59,79 @@ html, body {
 	height: 100%;
 }
 
-header {
-	width: 100%;
-	height: 80px;
-	text-align: left;
-	margin: 0;
-	position: fixed;
-	background-color: #fff
+body {
+	background-color: #f0f0f0;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -50px;
 }
 
-section {
-	background-color: #f0f0f0;
+/* format consistent borders throughout page*/
+
+iframe, aside, #textBox, #search-button, #upload-button, #sign-in-button, .footer-buttons {
+	border: 1px solid #C8C8C8;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+	color: #000;
+}
+
+.action-buttons {
+	border: none;
+	background-color: transparent;
+	color: #888888;
 }
 
 li {
 	display: inline-block;
-	padding: 0 0 0 0;
+	padding: 0;
 	vertical-align: middle;
-	margin: 0 0 0 0;
-}
-
-video {
-	width: 600px;
-	height: 450px;
-	padding: 0;
-}
-
-.navigation {
-	padding: 0;
-	border: none;
-	background-color: transparent;
-	margin: 0 50px 0 0;
-}
-
-.logo {
-	width: 100px;
-	height: 75px;
-	padding: 0 0 0 0;
 	margin: 0;
 }
 
-.textBox, .search-button {
-	
-	border: 1px solid #C8C8C8;
+h1 {
+	font-size: 18px;
+	font-weight: bold;
 }
 
-.textBox {
+h4 {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+h5{
+	font-size: 12px;
+	font-weight: bold;
+}
+
+strong	{
+	font-weight: bold;
+}
+
+/* format the header section, including buttons
+and boxes */
+
+header {
+	width: 100%;
+	height: 80px;
+	margin-bottom: 10px;
+	position: fixed;
+	background-color: #fff;
+	overflow: hidden;
+	z-index: 999;
+}
+
+#logo {
+	width: 100px;
+	height: 75px;
+	padding: 0;
+	margin: 0;
+}
+
+
+#textBox {
 	height: 26px;
 	width: 550px;
 	background-repeat: no-repeat;
@@ -64,36 +139,181 @@ video {
 	padding-right: 0;
 }
 
-.search-button {
+#search-button {
 	height: 30px;
 	width: 80px;
 	padding-left: 0;
 	margin: 0 50px 0 -5px;
 }
 
-.search-icon {
+#search-icon {
 	height: 19px;
 	padding: 2px 0 2px 0;
 }
 
-.upload-button, .sign-in-button, .search-button {
+#upload-button, #search-button {
 	background-color: #F8F8F8;
 }
 
-.upload-button, .sign-in-button {
-	border: 1px solid #C8C8C8;
+#upload-button, #sign-in-button {
 	border-radius: 1px;
 	height: 28px;
 	width: 60px;
 }
 
-.upload-button {
+#upload-button {
 	margin-right: 10px;
 }
 
-.sign-in-button {
+#sign-in-button {
 	color: #fff;
 	background-color: #167ac6;
 	border-color: #167ac6;
 }
 
+#upload-signin-wrapper {
+	float: right;
+	vertical-align: middle;
+	margin: 25px 25px 0 0;
+}
+
+/* format the center, including section and aside */
+
+#center {
+	padding-top: 90px;
+	width: 1000px;
+	margin: auto;
+}
+
+section, aside {
+	display: inline-block;
+	background-color: #fff;
+	margin: auto;
+	position: relative;
+}
+
+/* section specific formatting */
+
+section {
+	width: 560px;
+	float: left;
+	padding-right: 1px;
+}
+
+#video-info-wrapper, .content-wrapper {
+	width: 560px;
+	
+}
+
+.content-wrapper {
+	border: 1px solid #D0D0D0;
+}
+
+#navigation {
+	padding: 0;
+	border: none;
+	background-color: transparent;
+	margin: 0 50px 0 0;
+}
+
+
+h1, #poster-info-wrapper {
+	padding: 15px 15px 0 15px;
+
+}
+
+#poster-icon {
+	width: 50px;
+	margin-right: 5px;
+}
+
+#subscribe-button {
+	background-color: red;
+	border-radius: 2px;
+	border: 1px solid red;
+	color: #fff;
+	height: 25px;
+}
+
+#subscribe-button, #subscribe-count {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#dislike-button {
+	padding-right: 200px;
+}
+
+#watch-count {
+	text-align: right;
+	padding: 10px 10px 10px 150px;
+}
+
+#watch-action-bar {
+	padding: 0 10px 10px 10px;
+	font-size: 12px;
+	vertical-align: middle;
+	font-weight: bold;
+
+}
+
+#published {
+	padding: 10px 10px 0 10px;
+}
+
+#summary {
+	padding: 0 10px 10px 10px;
+	font-size: 13px;
+}
+
+#show-more {
+	text-align: center;
+	font-weight: bold;
+	padding-bottom: 20px;
+}
+
+#comment-box {
+	height: 40px;
+	width: 450px;
+}
+
+#comment-announcer, #icon-box-wrapper {
+	padding: 0 10px 10px 10px;
+}
+
+/* aside specific formatting */
+
+aside {
+	width: 500px;
+	float: center;
+
+}
+
+.thumbnail, .thumbnail-title {
+	display: inline-block;
+	padding: 10px 10px 10px 10px;
+	vertical-align: middle;
+}
+
+/* footer specific formatting */
+
+footer {
+	position: absolute;
+	width: 100%;
+	height: 80px;
+	bottom: 0;
+	background-color: #fff;
+}
+
+.footer-buttons {
+	padding: 5px;
+	margin: 5px;
+	background-color: #fff;
+	border-radius: 1px;
+	font-size: 11px;
+}
+
+.footer-links {
+	margin: 5px 5px 5px 5px;
+	padding-right: 10px;
+}

@@ -9,55 +9,159 @@
 	<header>
 		<ul>
 			<li>
-				<a href="#"><img class="logo" src="logo.jpg" alt="YouTube"></a></li>
+				<a href="#"><img id="logo" src="logo.jpg" alt="YouTube"></a></li>
 			<li>
-				<button class="navigation" type="button" onclick=";return false;">
-					<span class="button-icon-wrapper">
+				<button id="navigation" type="button" onclick=";return false;">
+					<span id="button-icon-wrapper">
 						<img src="nav.png">
 					</span>
 				</button>
 			<li>
-				<input type="text" class="textBox" name="search"></li>
+				<input type="text" id="textBox" name="search"></li>
 			<li>
-				<button class="search-button">
-					<img class="search-icon" src="search.png">
+				<button id="search-button">
+					<img id="search-icon" src="search.png">
 				</button></li>
-			<li><button class="upload-button">Upload</button></li>
-			<li><button class="sign-in-button">Sign In</button></li>
+			<div id="upload-signin-wrapper">
+				<li><button id="upload-button">Upload</button></li>
+				<li><button id="sign-in-button">Sign In</button></li>
+			</div>
 		</ul>
 	</header>
-	<section>
-	
-		<video src="https://www.youtube.com/watch?v=V74l_zS1x8E" controls></video>
-		<h2>Contributing to Open Source Part I: The Easy Way</h2>
-		<ul>
-			<li>poster-icon</li>
-			<li>poster-name, subscribe button</li>
-			<li>watch-count</li>
-		</ul>
-		<ul>
-			<li>like-icon</li>
-			<li>Like</li>
-			<li>dislike-icon</li>
-			<li>About</li>
-			<li>Share</li>
-			<li>Add to</li>
-			<li>transcript-icon</li>
-			<li>statistics-icon</li>
-			<li>report-icon</li>
-		</ul>
-		<h6>Published on Feb 27, 2014</h6>
-		<p>How do you contribute to open source? In this video, I'll describe the easiest way to make a simple contribution to an open source project -- without using the command line, a text editor, "forking a repo", or even touching Git outside of Github. I'll also describe what kinds of contributions open source software projects are typically</p>
-		<p>Show more</p>
-		<h6>NO COMMENTS YET</h6>
-		<ul>
-			<li>user-icon</li>
-			<li>comment-box</li>
-		</ul>
-	</section>
-	<aside>
-	</aside>
+	<div id="center">
+		<section>
+			<div id="video-info-wrapper">
+				<div class="content-wrapper">
+					<iframe width="560" height="315" src="http://www.youtube.com/embed/Tff3ng-djtk" frameborder="0" allowfullscreen></iframe>
+					<h1>How to Knit: A Complete Introduction for Beginners Part 1</h1>
+					<div id="poster-info-wrapper">
+						<ul>
+							<li><img id="poster-icon" src="https://yt3.ggpht.com/-yjDXvPIBCmw/AAAAAAAAAAI/AAAAAAAAAAA/z--apWv4lV8/s88-c-k-no/photo.jpg"></li>
+							<li><h4>Knitting-help.com</h4><br>
+								<button id="subscribe-button">
+									<img src="subscribe.png">
+									Subscribe</button>
+								<img id="subscribe-count" src="subscribe-count.png"></li>
+							<li><img id="watch-count" src="watch-count.png"></li>
+						</ul>
+					</div>
+					<div id="watch-action-bar">
+						<ul>
+							<li><button class="action-buttons">
+									<img src="like-button-image.png">
+									Like</button></li>
+							<li><button class="action-buttons" id="dislike-button">
+									<img id="dislike-button-image" src="dislike-button-image.png"></button></li>
+							
+							<li><button class="action-buttons">About</button></li>
+							<li><button class="action-buttons">Share</button></li>
+							<li><button class="action-buttons">Add to</button></li>
+							<li><button class="action-buttons">
+									<img src="transcript-icon.png"></button></li>
+							<li><button class="action-buttons">
+									<img src="statistics-icon.png"></button></li>
+							<li><button class="action-buttons">
+									<img src="report-icon.png"></button></li>
+						</ul>
+					</div>
+				</div>
+				<div class="content-wrapper">
+					<div id="published">	
+						<h4>Published on Mar 1, 2013</h4>
+					</div>
+					<div id="summary">
+						<p>Grab your knitting needles and yarn and get ready to learn how to knit! How to Knit: A complete introduction for beginners is a step by step tutorial for new knitters to follow along and learn to knit. The complete video is 45 minutes long and jam packed with knitting know-how for the new knitter. The video has been divided into 3 </p>
+					</div>
+					<div id="show-more">
+						<p>Show more</p>
+					</div>
+					<div id="comment-announcer">
+						<h4>NO COMMENTS YET</h4>	
+					</div>
+					<div id="icon-box-wrapper">
+						<ul>
+							<li><img src="https://lh3.googleusercontent.com/uFp_tsTJboUY7kue5XAsGA=s48"></li>
+							<li><input type="text" id="comment-box" name="comment"></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+		<aside>
+			<ul>
+				<li>
+					<div class="thumbnail-description">
+						<img class="thumbnail" src="https://i.ytimg.com/vi_webp/MCZXZiThK0A/default.webp">
+						<div class="thumbnail-title">
+							<h5>How to Knit: A Complete Introduction for Beginners Part 2</h5><br>
+							<p>by KnittingHelp.com</p><br>
+							<p>87,750 views</p>
+						</div>
+					</div></li>
+				<li>
+					<div class="thumbnail-description">
+						<img class="thumbnail" src="https://i.ytimg.com/vi_webp/c8CNu6fgtVw/default.webp">
+						<div class="thumbnail-title">
+							<h5>How to Knit: A Complete Introduction for Beginners Part 3</h5><br>
+							<p>by KnittingHelp.com</p><br>
+							<p>37,513 views</p>
+						</div>
+					</div></li>
+				<li>
+					<div class="thumbnail-description">
+						<img class="thumbnail" src="https://i.ytimg.com/vi_webp/hfz-xXyWYU0/default.webp">
+						<div class="thumbnail-title">
+							<h5>Knitting - Basic Purl Stitch (English/Throw Method)</h5><br>
+							<p>by KnittingHelp.com</p><br>
+							<p>12,468 views</p>
+						</div>
+					</div></li>
+
+			</ul>
+		</aside>
 	<footer>
+		<ul>
+			<li>
+				<a href="#"><img id="logo" src="logo.jpg" alt="YouTube"></a></li>
+			<li>
+				<button class="footer-buttons">Language: <strong>English</strong></button></li>
+			<li>
+				<button class="footer-buttons">Country: <strong>Worldwide</strong></button></li>
+			<li>
+				<button class="footer-buttons">Safety: <strong>Off</strong></button></li>
+			<li>
+				<button class="footer-buttons">Help</button></li>
+		</ul>
+		<ul>
+			<li>
+				<a class="footer-links" href="#"><strong>About</strong></a></li>
+			<li>
+				<a class="footer-links"href="#"><strong>Press &amp; Blogs</strong></a></li>
+			<li>
+				<a class="footer-links" href="#"><strong>Copyright</strong></a></li>
+			<li>
+				<a class="footer-links" href="#"><strong>Creators &amp; Partners</strong></a></li>
+			<li>
+				<a class="footer-links" href="#"><strong>Advertising</strong></a></li>
+			<li>
+				<a class="footer-links" href="#"><strong>Developers</strong></a></li>
+			<li>
+				<a class="footer-links" href="#"><strong>+YouTube</strong></a></li>
+		</ul>
+		<br>
+		<ul>
+			<li>
+				<a class="footer-links" href="#">Terms</a></li>
+			<li>
+				<a class="footer-links" href="#">Privacy</a></li>
+			<li>
+				<a class="footer-links" href="#">Policy &amp; Safety</a></li>
+			<li>
+				<a class="footer-links" href="#">Send feedback</a></li>
+			<li>
+				<a class="footer-links" href="#">Try something new!</a></li>
+		</ul>
 	</footer>
 </body>
 </html>
